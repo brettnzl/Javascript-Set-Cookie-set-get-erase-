@@ -1,4 +1,6 @@
 # Javascript-Set-Cookie-set-get-erase-
+
+```
 // Function to set a cookie. 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -27,9 +29,11 @@ function getCookie(cname) {
 function eraseCookie(name) {   
     document.cookie = name+'=; Max-Age=-99999999;';  
 }
+```
 
 Add the following code then create a toggle or a change to use it. 
 
+```
  // Toggle Button for Dark Mode
     $('.nighttoggle .toggle-switch').on('change', function(){
         if (this.checked) {
@@ -40,3 +44,12 @@ Add the following code then create a toggle or a change to use it.
             eraseCookie('darkmode');
         }
     });
+```
+
+in PHP this can be accessed using the following:
+
+```
+if ($_COOKIE['darkmode']) {
+    true;
+}
+```
